@@ -8,4 +8,5 @@ module "SA" {
   sname    = var.sname
   rgname   = var.rgname
   location = var.location
+  depends_on = [ module.RG ]
 }
