@@ -1,6 +1,6 @@
 module "RG" {
-  source   = "./RG" 
-  rgname   = var.rgname    
+  source   = "./RG"
+  rgname   = var.rgname
   location = var.location
 }
 module "SA" {
