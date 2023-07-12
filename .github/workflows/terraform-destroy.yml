@@ -29,6 +29,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: 'Terraform Init'
+        uses: hashicorp/terraform-github-actions@master
+        with:
+          tf_actions_version: 0.14.8
+          tf_actions_subcommand: 'init'
+          tf_actions_working_dir: "./terraform"
+
+
       
       - name: 'Terraform destroy'
         uses: hashicorp/terraform-github-actions@master
