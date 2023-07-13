@@ -33,7 +33,7 @@ resource "azurerm_windows_virtual_machine" "example" {
   name                = "tsr-vm1"
   resource_group_name = azurerm_resource_group.RG.name
   location            = azurerm_resource_group.RG.location
-  size                = "Standard_F2"
+  size                = "Standard_B2s"
   admin_username      = "tsr"
   admin_password      = "Tsr@12345678"
   network_interface_ids = [
